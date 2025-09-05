@@ -1,0 +1,28 @@
+#Average Score of all subjects
+Average Score = 
+AVERAGEX(
+    'StudentPerformanceAnalysis_Cleaned', 
+    (
+        'StudentPerformanceAnalysis_Cleaned'[Math_Score] +
+        'StudentPerformanceAnalysis_Cleaned'[Reading_Score] +
+        'StudentPerformanceAnalysis_Cleaned'[Writing_Score]
+    ) / 3
+)
+
+#Highest Maths Score
+Math Max = MAX('StudentPerformanceAnalysis_Cleaned'[Math_Score])
+
+#Lowest Maths Score
+Maths Min = MIN('StudentPerformanceAnalysis_Cleaned'[Math_Score])
+
+#Highest Reading Score
+Reading Max = MAX('StudentPerformanceAnalysis_Cleaned'[Reading_Score])
+
+#Lowest Reading Score
+Reading Min = MIN('StudentPerformanceAnalysis_Cleaned'[Reading_Score])
+
+#Highest Writing Score
+Writing Max = MAX('StudentPerformanceAnalysis_Cleaned'[Writing_Score])
+
+#Lowest Writing Score
+Writing Min = MIN('StudentPerformanceAnalysis_Cleaned'[Writing_Score])
